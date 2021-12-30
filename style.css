@@ -6,14 +6,14 @@
     font-family: 'Poppins', sans-serif;
 }
 :root{
+    --primaryColor: #e0e0e0;
+    --secondColor: #6e58eb;
+    --thirdColor: #222629;
+}
+.light-theme{
     --primaryColor: #222629;
     --secondColor: #f75c5c;
     --thirdColor: #e0e0e0;
-}
-.dark-theme{
-    --primaryColor: #e0e0e0;
-    --secondColor: #2a6dd1;
-    --thirdColor: #222629;
 }
 body{
     background: var(--primaryColor);
@@ -92,4 +92,9 @@ table.month td.day .day-content:hover{
     top: 20px;
     transition: 0.5s;
 }
-/* aaaaaaaaaaaaaaaaaaaaaaa */
+.imgContainer{
+    text-align: center;
+}
+.imgCalendar{
+    width: 200px;
+}
