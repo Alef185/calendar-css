@@ -86,8 +86,8 @@ table.month td.day .day-content:hover{
 }
 .DarkMode{
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 50px;
+    top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,4 +121,27 @@ table.month td.day .day-content:hover{
     #icon{
         width: 40px;
     }
+}
+.footer{
+    padding: 30px;
+    text-align: center;
+    border-top: 2px solid var(--thirdColor);
+    background: var(--primaryColor);
+}
+.footer h2{
+    font-size: 1.3em;
+    color: var(--thirdColor);
+}
+.footer a{
+    text-decoration: none;
+    color: var(--secondColor);
+    transition: 0.4s;
+}
+.footer a:hover{
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: var(--secondColor);
+}
+.footer p{
+    color: var(--thirdColor);
 }
