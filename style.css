@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --primaryColor: #222629;
+    --secondColor: #f75c5c;
+    --thirdColor: #e0e0e0;
+}
+.dark-theme{
+    --primaryColor: #e0e0e0;
+    --secondColor: #2a6dd1;
+    --thirdColor: #222629;
+}
+body{
+    background: var(--primaryColor);
+    transition: 0.4s;
+}
+.title{
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    color: var(--thirdColor);
+}
+.calendar{
+    padding: 20px 40px;
+}
+.months-container{
+    justify-content: center;
+    gap: 40px;
+}
+.calendar .months-container .month-container{
+    background: #e0e0e0;
+    padding: 20px;
+    min-width: 280px;
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.651);
+    border-radius: 3px;
+}
+.calendar table.month th.month-title{
+    color: rgb(23, 33, 65);
+    font-size: 1.9em;
+    font-weight: 200;
+}
+table.month td:first-child,
+table.month td:last-child,
+table.month thead tr:nth-child(2) th:first-child,
+table.month thead tr:nth-child(2) th:last-child
+{
+    color: var(--secondColor);
+}
+.calendar table.month td.day .day-content{
+    padding: 6px 8px;
+}
+.calendar table.month th.day-header{
+    color: #777;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+.month tr td{
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #777;
+}
+table.month td.day .day-content:hover{
+    background: var(--secondColor);
+    color: #e0e0e0;
+}
+.calendar .calendar-header{
+    border: none;
+}
+.calendar .calendar-header table th:hover{
+    background: transparent;
+}
+.calendar .calendar-header .year-title{
+    font-size: 4em;
+    color: var(--secondColor);
+}
+.calendar .calendar-header .year-neighbor{
+    font-size: 2.25em;
+}
+.calendar .calendar-header .year-neighbor2{
+    font-size: 1em;
+}
+#icon{
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    transition: 0.5s;
+}
+/* aaaaaaaaaaaaaaaaaaaaaaa */
