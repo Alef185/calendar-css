@@ -14,7 +14,7 @@
         <img src="calendar.png" alt="" class="imgCalendar">
     </div>
     <div class="title">Calendário - AlefiDev</div>
-    <img src="moon.png" alt="" id="icon">
+    <div class="DarkMode"><h1 class="letter" id="letter">Dark </h1><img src="moon.png" alt="" id="icon"></div>
     <div class="calendar"></div>
     <script src="https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.min.js"></script>
     <script src="https://unpkg.com/js-year-calendar@2.0.0/locales/js-year-calendar.pt.js"></script>
@@ -30,8 +30,10 @@
             document.body.classList.toggle("light-theme");
             if(document.body.classList.contains("light-theme")){
                 icon.src = "sun.png"
+                document.getElementById("letter").innerHTML = "Light";
             }else{
                 icon.src = "moon.png"
+                document.getElementById("letter").innerHTML = "Dark";
             }
         }
     </script>
